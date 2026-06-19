@@ -1,0 +1,34 @@
+{
+  "name": "cortex-plugin-feishu",
+  "version": "1.0.0",
+  "description": "Feishu/Lark Adapter — Cortex agent in ByteDance's Feishu ecosystem with interactive cards, multi-turn conversations, and document integration",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-feishu",
+  "homepage": "https://cortexprism.io/marketplace/plugins/feishu",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    {
+      "name": "feishu_send_message",
+      "description": "Send interactive card message to Feishu chat",
+      "params": []
+    },
+    {
+      "name": "feishu_create_doc",
+      "description": "Create a Feishu document with content",
+      "params": []
+    },
+    { "name": "feishu_list_groups", "description": "List chat groups and channels", "params": [] },
+    {
+      "name": "feishu_get_calendar",
+      "description": "Get calendar events and schedule",
+      "params": []
+    }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
