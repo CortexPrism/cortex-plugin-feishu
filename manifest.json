@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-feishu",
-  "version": "1.0.0",
-  "description": "Feishu/Lark Adapter — Cortex agent in ByteDance's Feishu ecosystem with interactive cards, multi-turn conversations, and document integration",
+  "version": "1.0.1",
+  "description": "Feishu/Lark Adapter \u2014 Cortex agent in ByteDance's Feishu ecosystem with interactive cards, multi-turn conversations, and document integration",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,7 +9,10 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-feishu",
   "homepage": "https://cortexprism.io/marketplace/plugins/feishu",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
     {
       "name": "feishu_send_message",
@@ -21,7 +24,11 @@
       "description": "Create a Feishu document with content",
       "params": []
     },
-    { "name": "feishu_list_groups", "description": "List chat groups and channels", "params": [] },
+    {
+      "name": "feishu_list_groups",
+      "description": "List chat groups and channels",
+      "params": []
+    },
     {
       "name": "feishu_get_calendar",
       "description": "Get calendar events and schedule",
@@ -29,6 +36,13 @@
     }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
